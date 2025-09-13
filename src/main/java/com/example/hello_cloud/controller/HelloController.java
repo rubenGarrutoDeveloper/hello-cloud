@@ -10,4 +10,9 @@ public class HelloController {
     public String hello() {
         return "Hello World from Spring Boot!";
     }
+
+    @GetMapping("/time")
+    public String time() {
+        return "time: " + System.currentTimeMillis();
+    }
 }
